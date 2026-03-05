@@ -24,4 +24,17 @@ public class VehicleView {
 
     }
 
+
+
+
+
+
+    public static void deleteVehiculo{
+
+        DeleteVehicleUseCase deleteVehicleUseCase = new DeleteVehicleUseCase(new VehicleDataRepository(VehicleMemLocalDataSource));
+
+        deleteVehicleUseCase.execute();
+
+        System.out.println();
+    }
 }
